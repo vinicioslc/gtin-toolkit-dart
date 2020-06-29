@@ -1,6 +1,6 @@
 name: gtin_toolkit
 description: A toolkit for validate, generate and check GTIN's. This project indeeds to be; stable, easy to use and fast (when possible).
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/vinicioslc/gtin-toolkit-dart/
 
 environment:

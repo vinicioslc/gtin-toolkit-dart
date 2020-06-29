@@ -1,4 +1,4 @@
-# GTIN Toolkit - 1.0.1
+# GTIN Toolkit
 
 [![pub package](https://img.shields.io/pub/v/gtin_toolkit.svg)](https://pub.dev/packages/gtin_toolkit)
 ![Dart CI](https://github.com/vinicioslc/gtin-toolkit-dart/workflows/Dart%20CI/badge.svg)
