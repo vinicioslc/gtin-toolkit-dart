@@ -4,13 +4,6 @@ import 'package:gtin_toolkit/classifier.dart';
 
 void main() {
   group("Classifier tests", () {
-    test('GTIN Input type must be invalid', () {
-      try {
-        classifyGTIN(new Future(() => {}));
-      } catch (e) {
-        expect(e is GTINTypeError, true);
-      }
-    });
     test('GTIN Length must be invalid', () {
       try {
         classifyGTIN("Invalid GTIN Length for test");

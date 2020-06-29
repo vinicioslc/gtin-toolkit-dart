@@ -9,15 +9,11 @@ bool _isValidText(inputGTIN) => inputGTIN.toString().contains(r"[d]{7,}/gmi");
 /** 
  * Classify input GTIN and returns it
  */
-Map<String, dynamic> classifyGTIN(dynamic inputGTIN) {
-  if (!(inputGTIN is String) && !(inputGTIN is int)) {
-    throw GTINTypeError();
-  }
-
+Map<String, dynamic> classifyGTIN(String inputGTIN) {
+  Map currentType;
   if (_isValidText(inputGTIN.toString())) {
     throw NonGTINFormatError();
   }
-  Map currentType;
 
   GTINTypes.forEach((key, value) {
     if (inputGTIN.length == value["digits"]) {

@@ -12,6 +12,22 @@ A toolkit for validate GTIN's and generate GTIN as well.
 
 This project indeeds to be, stable, easy to use and fast (when possible).
 
+## Features
+
+Actually this library could make something like :
+
+- Validate
+
+  GTIN including types, `SSCC`, `GSIN`, `GTIN-14`, `GTIN-13`, `GTIN-12`, `GTIN-8`.
+
+- Generate Random valid GTIN
+
+  Only need give the amount of GTIN digits ex.: for `SSCC` use `18` digits.
+
+- Classify GTIN
+
+  Return type using length for classify `SSCC`, `GSIN`, `GTIN-14`, `GTIN-13`, `GTIN-12`, `GTIN-8`.
+
 ## Use Example
 
 ```dart
@@ -38,11 +54,3 @@ void main() {
 
 
 ```
-
-## Features
-
-Actually this library could make something like :
-
-- Validate GTIN including types, `SSCC`, `GSIN`, `GTIN-14`, `GTIN-13`, `GTIN-12`, `GTIN-8`.
-
-- Classify GTIN type using length for types `SSCC`, `GSIN`, `GTIN-14`, `GTIN-13`, `GTIN-12`, `GTIN-8`.
