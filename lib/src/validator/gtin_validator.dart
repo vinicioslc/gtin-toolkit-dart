@@ -1,10 +1,8 @@
 import '../math/calc_digit.dart';
 
-/**
- * This function are de lightweight (or fast) from this library it receives an Integer List,
- * and  compute all math necessary to validate GTIN
- * Use if your gtin are always in same format.
- */
+///This function are de lightweight (or fast) from this library it receives an Integer List,
+///and  compute all math necessary to validate GTIN
+///Use if your gtin are always in same format.
 bool isValidGTIN(List<int> inputGTIN) {
   try {
     final List<int> cuttedGTIN = inputGTIN.sublist(0, inputGTIN.length - 1);

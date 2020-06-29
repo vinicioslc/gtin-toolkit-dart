@@ -1,5 +1,6 @@
 # gtin_toolkit for Dart
 
+[![pub package](https://img.shields.io/pub/v/gtin_toolkit.svg)](https://pub.dev/packages/gtin_toolkit)
 ![Dart CI](https://github.com/vinicioslc/gtin-toolkit-dart/workflows/Dart%20CI/badge.svg)
 
 <div style="max-width: 50vw;">
