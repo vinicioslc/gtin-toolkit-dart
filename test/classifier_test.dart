@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
-import 'package:gtin_toolkit/exceptions.dart';
-import 'package:gtin_toolkit/gtin_toolkit.dart';
+import 'package:gtin_toolkit/src/exceptions.dart';
+import 'package:gtin_toolkit/classifier.dart';
 
 void main() {
   group("Classifier tests", () {

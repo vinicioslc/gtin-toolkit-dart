@@ -1,6 +1,6 @@
 /**
  * Every inputed GTIN must be in digit -1(remove check digit) format like `1234567` (GTIN-8 Example)
- * @param {String} GTIN18 GTIN Code in 18 Format
+ * @param {String} gtin GTIN Code in any length
  */
 int findDigit(List<int> gtin) {
   return ((10 - _multiplyEntries(gtin).reduce(_reduceSum) % 10) % 10);

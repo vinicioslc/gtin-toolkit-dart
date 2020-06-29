@@ -1,7 +1,11 @@
-import 'package:gtin_toolkit/exceptions.dart';
-import 'package:gtin_toolkit/gtin_toolkit.dart';
-import 'package:gtin_toolkit/utils/parse-arrays.dart';
+import 'package:gtin_toolkit/src/exceptions.dart';
+import 'package:gtin_toolkit/src/utils/parse-arrays.dart';
+import 'package:gtin_toolkit/src/validator/gtin_validator.dart';
 
+/**
+ * This function parses `String` to `List<Int>` before call `isValidGTIN()` and then return if GTIN is valid.
+ * rembenber `try {} catch (e) {} ` this function could also throw Exceptions.
+ */
 bool parseAndValidate(dynamic gtin) {
   List<int> mapped = [];
 

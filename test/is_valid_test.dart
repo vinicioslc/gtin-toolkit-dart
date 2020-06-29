@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:gtin_toolkit/gtin_toolkit.dart';
+import 'package:gtin_toolkit/validator.dart';
 
 void main() {
   group("Validate and Invalidate GTIN's correctly:", () {

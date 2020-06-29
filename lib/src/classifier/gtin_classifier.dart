@@ -1,5 +1,5 @@
 import 'gtin_types.dart';
-import 'package:gtin_toolkit/exceptions.dart';
+import 'package:gtin_toolkit/src/exceptions.dart';
 
 bool _isValidText(inputGTIN) => inputGTIN.toString().contains(r"[d]{7,}/gmi");
 

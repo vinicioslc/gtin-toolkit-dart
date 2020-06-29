@@ -1,4 +1,4 @@
-import 'package:gtin_toolkit/parser_validator.dart';
+import 'package:gtin_toolkit/validator.dart';
 import 'package:test/test.dart';
 
 void main() {
