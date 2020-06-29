@@ -20,7 +20,7 @@ Map<String, dynamic> classifyGTIN(dynamic inputGTIN) {
   });
   if (currentType == null) {
     throw GTINLengthException(
-      message: "GTIN length [${inputGTIN.length}] don't match any type.",
+      message: "Input GTIN don't match any length type [${inputGTIN.length}] .",
     );
   }
   return currentType;

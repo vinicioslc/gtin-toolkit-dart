@@ -1,9 +1,14 @@
 const GTINTypes = {
-  "SSCC": {"name": 'SSCC', "know_as": [], "digits": 18},
-  "GSIN": {"name": 'GSIN', "know_as": [], "digits": 17},
-  "GTIN14": {
+  "SSCC": {
+    "name": 'SSCC',
+    "tags": ["SSCC", "GSRN"],
+    "digits": 18
+  },
+  "GSIN": {"name": 'GSIN', "tags": [], "digits": 17},
+  "GTIN-14": {
     "name": 'GTIN-14',
-    "know_as": [
+    "tags": [
+      'GTIN-14',
       'EAN',
       'ITF-14',
       'UCC-14',
@@ -17,19 +22,19 @@ const GTINTypes = {
     ],
     "digits": 14,
   },
-  "GTIN13": {
+  "GTIN-13": {
     "name": 'GTIN-13',
-    "know_as": ['EAN', 'JAN', 'EAN-13', 'ISBN'],
+    "tags": ['GTIN-13', 'EAN', 'JAN', 'EAN-13', 'ISBN'],
     "digits": 13,
   },
-  "GTIN12": {
+  "GTIN-12": {
     "name": 'GTIN-12',
-    "know_as": ['UPC', 'UCC-12'],
+    "tags": ['GTIN-12', 'UPC', 'UCC-12'],
     "digits": 12
   },
-  "GTIN8": {
+  "GTIN-8": {
     "name": 'GTIN-8',
-    "know_as": ['EAN-8', 'JAN', 'UPC'],
+    "tags": ['GTIN-8', 'EAN-8', 'JAN', 'UPC'],
     "digits": 8
   },
 };

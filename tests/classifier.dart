@@ -13,7 +13,7 @@ void main() {
     });
     test('GTIN Length must be invalid', () {
       try {
-        classifyGTIN("GTIN Length");
+        classifyGTIN("Invalid GTIN Length for test");
       } catch (e) {
         expect(e is GTINLengthException, true);
       }
