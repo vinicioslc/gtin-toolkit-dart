@@ -1,12 +1,12 @@
-class GTINInputTypeError extends TypeError {
-  String message;
-  GTINInputTypeError(
-      {this.message = "Invalid GTIN Type (Only allowed String and num )."});
-}
-
 class GTINException implements Exception {
   String message;
   GTINException({this.message = "Error in GTIN."});
+}
+
+class GTINTypeError extends TypeError {
+  String message;
+  GTINTypeError(
+      {this.message = "Invalid GTIN Type (Only allowed String and num )."});
 }
 
 class GTINLengthException extends GTINException {

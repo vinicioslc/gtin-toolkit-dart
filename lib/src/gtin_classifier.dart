@@ -1,12 +1,14 @@
 import 'gtin_types.dart';
 import 'package:gtin_toolkit/exceptions.dart';
 
-Map<String, dynamic> validateAndGetGTINType(dynamic inputGTIN) {
+bool _isValidText(inputGTIN) => inputGTIN.toString().contains(r"[d]{7,}/gmi");
+
+Map<String, dynamic> classifyGTIN(dynamic inputGTIN) {
   if (!(inputGTIN is String) && !(inputGTIN is num)) {
-    throw GTINInputTypeError();
+    throw GTINTypeError();
   }
 
-  if (isValidText(inputGTIN)) {
+  if (_isValidText(inputGTIN.toString())) {
     throw GTINNotNumberException();
   }
   Map currentType;
@@ -23,5 +25,3 @@ Map<String, dynamic> validateAndGetGTINType(dynamic inputGTIN) {
   }
   return currentType;
 }
-
-bool isValidText(inputGTIN) => inputGTIN.toString().contains(r"[d]{7,}/gmi");
