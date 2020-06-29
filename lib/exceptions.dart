@@ -5,8 +5,9 @@ class GTINException implements Exception {
 
 class GTINTypeError extends TypeError {
   String message;
+
   GTINTypeError(
-      {this.message = "Invalid GTIN Type (Only allowed String and num )."});
+      {this.message = "Invalid GTIN Type (Only allowed String and int)."});
 }
 
 class GTINLengthException extends GTINException {
@@ -16,5 +17,5 @@ class GTINLengthException extends GTINException {
 
 class GTINNotNumberException extends GTINException {
   String message;
-  GTINNotNumberException({this.message = "GTIN are not a number."});
+  GTINNotNumberException({this.message = "GTIN are not a int."});
 }

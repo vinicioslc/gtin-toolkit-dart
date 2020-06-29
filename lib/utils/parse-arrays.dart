@@ -1,5 +1,6 @@
-List<int> fromStringToIntArray(String gtinString) =>
-    gtinString.split('').map(int.parse);
+List<int> fromStringToArray(String gtinString) {
+  return gtinString.split('').map(int.parse).toList();
+}
 
-List<int> fromNumToIntArray(num gtinString) =>
-    fromStringToIntArray(gtinString.toString());
+List<int> fromNumToArray(int gtinString) =>
+    fromStringToArray(gtinString.toString());

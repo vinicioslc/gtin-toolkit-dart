@@ -4,7 +4,7 @@ import 'package:gtin_toolkit/exceptions.dart';
 bool _isValidText(inputGTIN) => inputGTIN.toString().contains(r"[d]{7,}/gmi");
 
 Map<String, dynamic> classifyGTIN(dynamic inputGTIN) {
-  if (!(inputGTIN is String) && !(inputGTIN is num)) {
+  if (!(inputGTIN is String) && !(inputGTIN is int)) {
     throw GTINTypeError();
   }
 
