@@ -11,13 +11,13 @@ void main() {
     List<int> validGtinArray = validGtin.split('').map(int.parse).toList();
     List<int> invalidGtinArray = invalidGtin.split('').map(int.parse).toList();
 
-    expect(gtinTool.parseAndValidate(validGtin), true); // => true
-    expect(gtinTool.parseAndValidate(invalidGtin), false); // => false
+    expect(gtinTool.parseAndValidate(validGtin), true);
+    expect(gtinTool.isValidGTIN(validGtinArray), true);
 
-    expect(gtinTool.isValidGTIN(validGtinArray), true); // => true
-    expect(gtinTool.isValidGTIN(invalidGtinArray), false); // => false
+    expect(gtinTool.parseAndValidate(invalidGtin), false);
+    expect(gtinTool.isValidGTIN(invalidGtinArray), false);
 
-    expect(gtinTool.generateGTIN().length, 14); // => true default length
+    expect(gtinTool.generateGTIN().length, 14);
     expect(gtinTool.classifyGTIN(validGtin)['name'], 'GTIN-12');
 
     expect(true, true);
