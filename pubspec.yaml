@@ -1,6 +1,6 @@
 name: gtin_toolkit
 description: A toolkit for validate, generate and check GTIN's.
-version: 0.0.1
+version: 1.0.0
 author: Vinicios Clarindo <vinicioslc@outlook.com>
 homepage:
 
