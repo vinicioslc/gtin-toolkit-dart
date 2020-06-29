@@ -23,7 +23,7 @@ void main() {
       try {
         classifyGTIN("GTIN Error Length");
       } catch (e) {
-        expect(e is GTINNotNumberException, true);
+        expect(e is NonGTINFormatError, true);
       }
     });
 

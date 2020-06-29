@@ -15,7 +15,7 @@ class GTINLengthException extends GTINException {
   GTINLengthException({this.message = "GTIN length don't match any type."});
 }
 
-class GTINNotNumberException extends GTINException {
+class NonGTINFormatError extends GTINTypeError {
   String message;
-  GTINNotNumberException({this.message = "GTIN are not a int."});
+  NonGTINFormatError({this.message = "GTIN are not a int."});
 }
