@@ -1,5 +1,6 @@
 # GTIN Toolkit
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a5915c1c2ddb4167a207365cef67dbed)](https://app.codacy.com/manual/vinicioslc/gtin-toolkit-dart?utm_source=github.com&utm_medium=referral&utm_content=vinicioslc/gtin-toolkit-dart&utm_campaign=Badge_Grade_Dashboard)
 [![pub package](https://img.shields.io/pub/v/gtin_toolkit.svg)](https://pub.dev/packages/gtin_toolkit)
 ![Dart CI](https://github.com/vinicioslc/gtin-toolkit-dart/workflows/Dart%20CI/badge.svg)
 
