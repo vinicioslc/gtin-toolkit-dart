@@ -18,7 +18,7 @@ void main() {
     expect(gtinTool.isValidGTIN(invalidGtinArray), false);
 
     expect(gtinTool.generateGTIN().length, 14);
-    expect(gtinTool.classifyGTIN(validGtin)['name'], 'GTIN-12');
+    expect(gtinTool.classifyGTIN(validGtin)!.name, 'GTIN-12');
 
     expect(true, true);
   });

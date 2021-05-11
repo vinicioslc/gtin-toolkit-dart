@@ -1,25 +1,25 @@
 import 'gtin_types.dart';
 import 'package:gtin_toolkit/src/exceptions.dart';
 
+/// RegEx to check for numbers
+final _numbersOnlyRegex = RegExp(r"\d{7,}");
+
 /// Check if include only valid digits.
-bool _isValidText(inputGTIN) => inputGTIN.toString().contains(r"[d]{7,}/gmi");
+bool _isValidText(String inputGTIN) => _numbersOnlyRegex.hasMatch(inputGTIN);
 
 /// Classify input GTIN and returns it
-Map<String, dynamic> classifyGTIN(String inputGTIN) {
-  Map currentType;
-  if (_isValidText(inputGTIN.toString())) {
+GTINType? classifyGTIN(String inputGTIN) {
+  if (!_isValidText(inputGTIN)) {
     throw NonGTINFormatError();
   }
 
-  GTINTypes.forEach((key, value) {
-    if (inputGTIN.length == value["digits"]) {
-      currentType = value;
-    }
-  });
-  if (currentType == null) {
+  final type = GTINTypes[inputGTIN.length];
+
+  if (type == null) {
     throw GTINLengthException(
       message: "Input GTIN don't match any length type [${inputGTIN.length}] .",
     );
   }
-  return currentType;
+
+  return type;
 }
