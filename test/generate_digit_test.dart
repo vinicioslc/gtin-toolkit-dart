@@ -1,8 +1,6 @@
 import "package:gtin_toolkit/gtin_toolkit.dart";
 import "package:test/test.dart";
 
-import "package:gtin_toolkit/src/math/calc_digit.dart";
-
 void main() {
   group("Calculate check digit correctly", () {
     test("Correct size", () {
